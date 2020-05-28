@@ -11,4 +11,8 @@ public class Card {
     public CardSuit getSuit() {
         return this.suit;
     }
+
+    public CardValue getValue() {
+        return this.value;
+    }
 }
