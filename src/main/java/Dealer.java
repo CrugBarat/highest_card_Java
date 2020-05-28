@@ -14,4 +14,14 @@ public class Dealer {
         player.addCard(deck.dealCard());
     }
 
+    public Player declareWinner(Player player1, Player player2) {
+        if (player1.handTotal() != player2.handTotal()) {
+            if (player1.handTotal() > player2.handTotal()) {
+                return player1;
+            } else {
+                return player2;
+            }
+        } return null;
+    }
+
 }
