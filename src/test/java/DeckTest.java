@@ -27,19 +27,10 @@ public class DeckTest {
         }
 
         @Test
-        public void canShuffleDeckReturnsFalse(){
-            deck.addCards();
-            deck2.addCards();
-            deck2.shuffleCards();
-            assertEquals(false, deck.equals(deck2));
-        }
-
-        @Test
          public void canDealACard() {
             deck.addCards();
             deck.dealCard();
             assertEquals(51, deck.getDeckSize());
         }
-
 
 }
