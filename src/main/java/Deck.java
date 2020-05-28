@@ -8,6 +8,10 @@ public class Deck {
         this.deck = new ArrayList<Card>();
     }
 
+    public int getDeckSize() {
+        return this.deck.size();
+    }
+
     public void addCards() {
         for (int i = 0; i < 13; i++) {
             CardValue value = CardValue.values()[i];
