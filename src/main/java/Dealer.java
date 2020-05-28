@@ -9,4 +9,9 @@ public class Dealer {
     public String getName() {
         return this.name;
     }
+
+    public void deal(Player player, Deck deck) {
+        player.addCard(deck.dealCard());
+    }
+
 }
