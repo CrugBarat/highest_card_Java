@@ -22,5 +22,10 @@ public class Player {
         this.cards.add(card);
     }
 
+    public int handTotal(){
+        int total = 0;
+        for(Card card : this.cards) total += card.getValue().getValue();
+        return total;
+    }
 
 }

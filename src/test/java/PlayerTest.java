@@ -6,7 +6,7 @@ import static org.junit.Assert.assertEquals;
 public class PlayerTest {
 
     private Player player;
-    private Card card;
+    private Card card, card2;
 
     @Before
     public void before() {
@@ -28,6 +28,12 @@ public class PlayerTest {
     public void canAddACard() {
         player.addCard(card);
         assertEquals(1, player.getCardsSize());
+    }
+
+    @Test
+    public void canGetHandTotal() {
+        player.addCard(card);
+        assertEquals(14, player.handTotal());
     }
 
 }
