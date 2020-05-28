@@ -12,7 +12,7 @@ public class Card {
         return this.suit;
     }
 
-    public CardValue getValue() {
-        return this.value;
+    public int getCardValue() {
+        return this.value.getValue();
     }
 }

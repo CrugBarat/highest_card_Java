@@ -18,8 +18,8 @@ public class CardTest {
     }
 
     @Test
-    public void canGetValue() {
-        assertEquals(CardValue.ACE, card.getValue());
+    public void canGetCardValue() {
+        assertEquals(14, card.getCardValue());
     }
 
 }
