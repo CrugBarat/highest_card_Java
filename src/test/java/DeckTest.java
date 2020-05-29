@@ -5,14 +5,11 @@ import static org.junit.Assert.assertEquals;
 
 public class DeckTest {
 
-        private Deck deck, deck2;
-        private Card card;
+        private Deck deck;
 
         @Before
         public void before() {
             deck = new Deck();
-            deck2 = new Deck();
-            card = new Card(CardSuit.CLUBS, CardValue.ACE);
         }
 
         @Test
@@ -32,6 +29,5 @@ public class DeckTest {
             deck.dealCard();
             assertEquals(51, deck.getDeckSize());
         }
-
 
 }
